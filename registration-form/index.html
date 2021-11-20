@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form By Gurukrupa Parivar</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="registration-content">
+                <div class="registration-img">
+                    <img src="images/registration-img.jpg" alt="">
+                </div>
+                <div class="registration-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>આરાધક નોંદણી ફોર્મ</h2>
+                        <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="નામ" required/>
+                        </div>
+                        <div class="form-radio">
+                            <label for="gender" class="radio-label">Gender :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="male">
+                                <label for="male">પુરૂષ</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">સ્ત્રી</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="address" id="address" placeholder="સરનામું" required/>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="village" id="vname" placeholder="ગામ" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="taluka" id="tmane" placeholder="તાલુકા" required/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <!-- <div class="form-group">
+                                <label for="state">State :</label>
+                                <div class="form-select">
+                                    <select name="state" id="state">
+                                        <option value=""></option>
+                                        <option value="us">America</option>
+                                        <option value="uk">English</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="city">City :</label>
+                                <div class="form-select">
+                                    <select name="city" id="city">
+                                        <option value=""></option>
+                                        <option value="losangeles">Los Angeles</option>
+                                        <option value="washington">Washington</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div> -->
+                            <div class="form-group">
+                                <input type="text" name="district" id="dname" placeholder="જીલો" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="state" id="smane" placeholder="રાજ્ય" required/>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="pincode" id="pincode" placeholder="પિનકોડ">
+                            </div>
+                            <div class="form-group">
+                                    <input type="number" name="age" id="age" placeholder="ઉમર" min="8" max="75" required/>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-select">
+                                <select name="illness" id="illness">
+                                    <option value="" disabled selected hidden>છેલ્લા એક વર્ષમાં કોઈપણ બીમારી :</option>
+                                    <option value="bp">બ્લડ પ્રેશર</option>
+                                    <option value="sugar">મધુમેહ</option>
+                                    <option value="asthama">અસ્થમા</option>
+                                    <option value="heartdisease">હૃદય રોગ</option>
+                                    <option value="dengue">ડેન્ગ્યુ</option>
+                                    <option value="jaundice">કમળો</option>
+                                    <option value="covide">કોરોના</option>
+                                    <option value="other">અન્ય</option>
+                                    <option value="noillness">કોઈ બીમારી નથી</option>
+                                </select>
+                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                            </div>
+                        </div>
+                        <div class="form-radio">
+                            <label for="vaccination" class="radio-label"> શું તમે કોવિડ માટે રસી લગાવી છે? :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="vaccination" id="yes" checked>
+                                <label for="yes">હા</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="vaccination" id="no">
+                                <label for="no">ના</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="number" name="mnumber" id="mnumber" placeholder="મોબાઈલ નંબર" required/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="ઈમેલ" />
+                            </div>
+                        </div>
+                        <div class="form-submit">
+                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                    <h2 align="center">ઓનલાઇન  વ્યવસ્થા - સંચાલન</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyB1f_RbBgyi-fURhh6cXajRvEpIxekOeAI",
+        authDomain: "shankheshvar-1008-aatham.firebaseapp.com",
+        projectId: "shankheshvar-1008-aatham",
+        storageBucket: "shankheshvar-1008-aatham.appspot.com",
+        messagingSenderId: "376877237654",
+        appId: "1:376877237654:web:8994c2c607a549858d89b7",
+        measurementId: "G-REGVR9HGZL"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+</body>
+</html>
