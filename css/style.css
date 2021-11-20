@@ -329,8 +329,9 @@ input, select {
   padding: 11px 20px;
   box-sizing: border-box;
   font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 13px; }
+  font-weight: 300;
+  font-size: 15px;
+  color: #8B2A5B; }
   input:focus,select:focus {
     border: 1px solid #ff6801; }
 
