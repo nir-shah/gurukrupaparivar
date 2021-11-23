@@ -1,132 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Shankeshwar Attham Registration</title>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Shankheshwar Attham Registraion Form</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicon_package_v0.16/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon_package_v0.16/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon_package_v0.16/favicon-16x16.png">
+		<link rel="manifest" href="images/favicon_package_v0.16/site.webmanifest">
+		<link rel="mask-icon" href="images/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
 
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+	<body>
 
-    <div class="main">
-        <div class="container">
-            <div class="registration-content">
-                <div class="registration-img">
-                    <img src="images/registration-img.jpg" alt="">
-                </div>
-                <div class="registration-form">
-                    <form method="POST" class="register-form" id="register-form">
-                        <h2 align="center">આરાધક નોંધણી ફોર્મ</h2>
-                        <div class="form-group">
-                                <input type="text" name="name" id="name" placeholder="નામ" required/>
-                        </div>
-                        <div class="form-radio">
-                            <label for="gender" class="radio-label">Gender :</label>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="male">
-                                <label for="male">પુરૂષ</label>
-                                <span class="check"></span>
-                            </div>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" id="female">
-                                <label for="female">સ્ત્રી</label>
-                                <span class="check"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="address" id="address" placeholder="સરનામું" required/>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="village" id="vname" placeholder="ગામ" required/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="taluka" id="tmane" placeholder="તાલુકા" required/>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="district" id="dname" placeholder="જીલો" required/>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="state" id="smane" placeholder="રાજ્ય" required/>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="pincode" id="pincode" placeholder="પિનકોડ">
-                            </div>
-                            <div class="form-group">
-                                    <input type="number" name="age" id="age" placeholder="ઉમર" min="8" max="75" required/>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="form-select">
-                                <select name="illness" id="illness">
-                                    <option value="" disabled selected hidden>છેલ્લા એક વર્ષમાં કોઈપણ બીમારી :</option>
-                                    <option value="bp">બ્લડ પ્રેશર</option>
-                                    <option value="sugar">મધુમેહ</option>
-                                    <option value="asthama">અસ્થમા</option>
-                                    <option value="heartdisease">હૃદય રોગ</option>
-                                    <option value="dengue">ડેન્ગ્યુ</option>
-                                    <option value="jaundice">કમળો</option>
-                                    <option value="covide">કોરોના</option>
-                                    <option value="other">અન્ય</option>
-                                    <option value="noillness">કોઈ બીમારી નથી</option>
-                                </select>
-                                <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                            </div>
-                        </div>
-                        <div class="form-radio">
-                            <label for="vaccination" class="radio-label"> શું તમે કોવિડ માટે રસી લગાવી છે? :</label>
-                            <div class="form-radio-item">
-                                <input type="radio" name="vaccination" id="yes" checked>
-                                <label for="yes">હા</label>
-                                <span class="check"></span>
-                            </div>
-                            <div class="form-radio-item">
-                                <input type="radio" name="vaccination" id="no">
-                                <label for="no">ના</label>
-                                <span class="check"></span>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="number" name="mnumber" id="mnumber" placeholder="મોબાઈલ નંબર" required/>
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" placeholder="ઈમેલ" />
-                            </div>
-                        </div>
-                        <div class="form-submit">
-                            <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
-                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
-                        </div>
-                    </form>
-                    <div class="form-text">
-                      <h2 align="center"> વ્યવસ્થા - સંચાલન </h2>
-                      <h3 align="center"> મુંબઈ જૈન સ્વયંસેવક મંડળ (B.J.S.M.) - ગોડીજી </h3>
-                      <h4 align="center"> -: સંપર્ક :- <h4>
-                      <h5>
-                        <li>સમીરભાઈ વી. શાહ - મો. ૭૭૧૮૦૧૦૫૧૨</li>
-                        <li>સંજયભાઈ આર. શાહ - મો. ૯૩૨૩૯૧૦૭૯૧</li>
-                        <li>વિશાલભાઈ એસ. શાહ - મો. ૯૩૨૩૦૧૯૨૮૪</li>
-                        <li>ચંદ્રેશભાઈ એન. શાહ - મો. ૯૯૩૦૦૮૩૮૫૮</li>
-                      </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="wrapper">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="images/registration-img.jpg" alt="">
+				</div>
+				<form action="/index.html" name="registration-form" method="post" autocomplete="off">
+					<h1>આરાધક નોંધણી ફોર્મ</h1>
+					<div class="form-wrapper">
+						<input type="text" name="name" id="name" placeholder="નામ" class="form-control" required>
+						<i class="zmdi zmdi-account"></i>
+					</div>
+					<div class="form-wrapper">
+						<select name="gender" id="gender" class="form-control" required>
+							<option value="" disabled selected>Gender</option>
+							<option value="male">પુરૂષ</option>
+							<option value="female">સ્ત્રી</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 20px"></i>
+					</div>
+					<div class="form-wrapper">
+						<input type="text" name="add1" id="add1" placeholder="સરનામું (Optional) " class="form-control">
+						<i class="zmdi zmdi-gps-dot"></i>
+					</div>
+					<div class="form-group">
+						<input type="text" name="village" id="village" placeholder="ગામ" class="form-control" required>
+						<input type="text" name="taluka" id="taluka" placeholder="તાલુકા" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<input type="text" name="district" id="district" placeholder="જીલો" class="form-control" required>
+						<input type="text" name="state" id="state" placeholder="રાજ્ય" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<input type="text" name="pincode" id="pincode" placeholder="પિનકોડ" class="form-control" required>
+						<input type="text" name="age" id="age" placeholder="ઉમર" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<input type="text" name="mobile" id="mobile" placeholder="મોબાઈલ નંબર" class="form-control" required>
+						<input type="text" name="email" id="email" placeholder="ઈમેલ (Optional)" class="form-control">
+					</div>
+					<div class="form-group">
+						<select name="illness" id="illness" class="form-control" required>
+							<option value="" disabled selected>છેલ્લા એક વર્ષમાં કોઈપણ બીમારી</option>
+						  	<option value="bp">બ્લડ પ્રેશર</option>
+                            <option value="sugar">મધુમેહ</option>
+                            <option value="asthama">અસ્થમા</option>
+                            <option value="heartdisease">હૃદય રોગ</option>
+                            <option value="dengue">ડેન્ગ્યુ</option>
+                            <option value="jaundice">કમળો</option>
+                            <option value="covide">કોરોના</option>
+                            <option value="other">અન્ય</option>
+                            <option value="noillness">કોઈ બીમારી નથી</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
 
-    <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-</body>
+						<select name="vaccinated" id="vaccinated" class="form-control" required>
+							<option value="" disabled selected>શું તમે કોવિડ માટે રસી લગાવી છે?</option>
+							<option value="yes">હા</option>
+							<option value="no">ના</option>
+						</select>
+						<i class="zmdi zmdi-caret-down" style="font-size: 17px"></i>
+					</div>
+					<button name="submit" id="submit" type="submit">
+						નોંદણી કરો
+						<i class="zmdi zmdi-arrow-right"></i>
+					</button>
+
+					<div class="form-wrapper">
+						<h1>વ્યવસ્થા - સંચાલન</h1>
+						<h2> મુંબઈ જૈન સ્વયંસેવક મંડળ (B.J.S.M.) - ગોડીજી </h2>
+	                   	<h3> -: સંપર્ક :- </h3>
+					</div>
+					<div class="form-group">
+						<li>સમીરભાઈ વી. શાહ</li>
+						<p><strong>મો. ૭૭૧૮૦૧૦૫૧૨</strong></p>
+					</div>
+					<div class="form-group">
+						<li>સંજયભાઈ આર. શાહ</li>
+						<p><strong>મો. ૯૩૨૩૯૧૦૭૯૧</strong></p>
+					</div>
+					<div class="form-group">
+						<li>વિશાલભાઈ એસ. શાહ</li>
+						<p><strong>મો. ૯૩૨૩૦૧૯૨૮૪</strong></p>
+					</div>
+					<div class="form-group">
+						<li>ચંદ્રેશભાઈ એન. શાહ</li>
+						<p><strong>મો. ૯૯૩૦૦૮૩૮૫૮</strong></p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	<!-- JS -->
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="vender/main.js"></script>
+	</body>
 </html>
