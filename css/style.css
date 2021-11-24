@@ -319,13 +319,13 @@ input, select {
   box-sizing: border-box;
   font-family: 'Montserrat';
   font-weight: 500;
-  font-size: 13px; 
+  font-size: 13px;
   border-left: none;
   border-right: none;
   border-top: none;
   background-color: transparent;}
   input:focus, select:focus {
-    border: 1px solid #slategray; 
+    border: 1px solid #slategray;
     border-left: none;
     border-right: none;
     border-top: none; }

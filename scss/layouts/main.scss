@@ -1,10 +1,10 @@
-.signup-content {
+.register.content {
     @extend display-flex;
 }
-.signup-img , .signup-form {
+.register-img , .registration-form {
     width: 50%;
 }
-.signup-img {
+.register-img {
     margin-bottom: -7px;
 }
 .register-form {

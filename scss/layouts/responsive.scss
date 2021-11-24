@@ -3,10 +3,10 @@
         width: calc(100% - 40px);
         max-width: 100%;
     }
-    .signup-content {
+    .register.content {
         @include flex-direction(column);
     }
-    .signup-img, .signup-form {
+    .register-img, .registration-form {
         width: 100%;
     }
 }
