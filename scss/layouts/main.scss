@@ -151,6 +151,17 @@ select {
     border: none;
     cursor: pointer;
 }
+.reset {
+    width: 140px;
+    height: 40px;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 13px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
 #reset {
     background: gainsboro;
     color: darkmagenta;
