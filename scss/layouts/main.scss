@@ -178,10 +178,6 @@ select {
     &:hover {
         background-color: darkmagenta;
     }
-    #submit:disabled{
-      background-color: gray;
-      color: black;
-    }
 }
 .loader {
   border: 16px solid #f3f3f3;

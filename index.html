@@ -1,151 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google-site-verification" content="PdJT5N0w5Yc4wTAXewkE41mZgFcMovFmhGd3djleopw" />
-    <title>Shankheshwar Attham Registraion Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="google-site-verification" content="PdJT5N0w5Yc4wTAXewkE41mZgFcMovFmhGd3djleopw" />
+	<title>Shankheshwar Attham Registraion Form</title>
 
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<link rel="manifest" href="images/site.webmanifest">
 
-    <!-- Font Icon -->
-    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+	<!-- Font Icon -->
+	<link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
 
-    <!-- Main css -->
-    <link rel="stylesheet" href="css/style.css">
+	<!-- Main css -->
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <div class="main">
-        <div class="container">
-            <div class="register-content">
-                <div class="register-img">
-                    <img src="images/registration-img.jpg" alt="">
-                </div>
-                <div class="registration-form">
-                    <form method="POST" action="#" class="register-form" id="register-form" name="register-form" onsubmit="submit.disabled = true; return true;" autocomplete="off">
-                        <h2>આરાધક નોંધણી ફોર્મ</h2>
-                        <div class="form-group">
-                            <input type="text" name="name" id="name" placeholder="નામ" required/>
-                        </div>
-                        <div class="form-radio">
-                            <label for="gender" class="radio-label">Gender :</label>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" value="male" id="male">
-                                <label for="male">Male</label>
-                                <span class="check"></span>
-                            </div>
-                            <div class="form-radio-item">
-                                <input type="radio" name="gender" value="female" id="female">
-                                <label for="female">Female</label>
-                                <span class="check"></span>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="add1" id="add1" placeholder="સરનામું (Optional)" />
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="village" id="village" placeholder="ગામ" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="taluka" id="taluka" placeholder="તાલુકા" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="district" id="district" placeholder="જીલો" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="state" id="state" placeholder="રાજ્ય" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="text" name="pincode" id="pincode" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="પિનકોડ" required>
-                            </div>
-                            <div class="form-group">
-                                <input type="text" name="age" id="age" maxlength="2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="ઉમર" required>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <div class="form-select">
-                                    <select name="illness" id="illness" required>
-                                        <option value="" disabled selected> છેલ્લા એક વર્ષમાં કોઈપણ બીમારી </option>
-                                        <option value="bp">બ્લડ પ્રેશર</option>
-                                        <option value="sugar">મધુમેહ</option>
-                                        <option value="asthama">અસ્થમા</option>
-                                        <option value="heartdisease">હૃદય રોગ</option>
-                                        <option value="dengue">ડેન્ગ્યુ</option>
-                                        <option value="jaundice">કમળો</option>
-                                        <option value="covide">કોરોના</option>
-                                        <option value="other">અન્ય</option>
-                                        <option value="noillness">કોઈ બીમારી નથી</option>
-                                    </select>
-                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="form-select">
-                                    <select name="vaccinated" id="vaccinated" required>
-                                        <option value="" disabled selected> શું તમે કોવિડ માટે રસી લગાવી છે? </option>
-                                        <option value="yes">હા</option>
-                                        <option value="no">ના</option>
-                                    </select>
-                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <input type="phone" name="mobile" id="mobile" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="મોબાઈલ નંબર" required />
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" placeholder="ઈમેલ (Optional)" />
-                            </div>
-                        </div>
-                        <div class="form-submit">
-                            <input type="reset" value="ફોર્મ રીસેટ કરો" class="reset" name="reset" id="reset" />
-                            <input type="submit" value="નોંદણી કરો" name="submit" id="submit" class="submit" />
-                        </div>
-                        <div class="form-group">
-                            <h2 style="padding-top: 18px; color: #C0392B; margin-top: 38px; font-size: 25px; ">વ્યવસ્થા - સંચાલન</h2>
-                            <h2 style= "color: #C0392B; font-size: 15px;">મુંબઈ જૈન સ્વયંસેવક મંડળ (B.J.S.M.) - ગોડીજી</h2>
-                            <h2 style= "color: #6E2C00; font-size: 15px;">-: સંપર્ક :-</h2>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <h2 style= "color: #6E2C00; font-size: 12px;">સમીરભાઈ વી. શાહ</h2>
-                                <h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૭૭૧૮૦૧૦૫૧૨</strong></h2>
-                            </div>
-                            <div class="form-group">
-                                <h2 style= "color: #6E2C00; font-size: 12px;">સંજયભાઈ આર. શાહ</h2>
-                                <h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૯૩૨૩૯૧૦૭૯૧</strong></h2>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <h2 style= "color: #6E2C00; font-size: 12px;">વિશાલભાઈ એસ. શાહ</h2>
-                                <h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૯૩૨૩૦૧૯૨૮૪</strong></h2>
-                            </div>
-                            <div class="form-group">
-                                <h2 style= "color: #6E2C00; font-size: 12px;">ચંદ્રેશભાઈ એન. શાહ</h2>
-                                <h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૯૯૩૦૦૮૩૮૫૮</strong></h2>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+	<div class="main">
+     <div class="container">
+         <div class="register-content">
+				<div class="register-img">
+					<img src="images/registration-img.jpg" alt="">
+				</div>
+				<div class="registration-form">
+				  <form method="POST" action="#" class="register-form" id="register-form" name="register-form" onsubmit="submit.disabled = true; return true;" autocomplete="off">
+				      <h2>આરાધક નોંધણી ફોર્મ</h2>
+				      <div class="form-group">
+							<input type="text" name="name" id="name" placeholder="નામ" required/>
+				      </div>
+				      <div class="form-radio">
+							<label for="gender" class="radio-label">Gender :</label>
+							<div class="form-radio-item">
+								<input type="radio" name="gender" value="male" id="male">
+								<label for="male">Male</label>
+								<span class="check"></span>
+							</div>
+							<div class="form-radio-item">
+								<input type="radio" name="gender" value="female" id="female">
+								<label for="female">Female</label>
+								<span class="check"></span>
+							</div>
+				      </div>
+				      <div class="form-group">
+				      	<input type="text" name="add1" id="add1" placeholder="સરનામું (Optional)" />
+				      </div>
+				      <div class="form-row">
+							<div class="form-group">
+								<input type="text" name="village" id="village" placeholder="ગામ" required>
+							</div>
+							<div class="form-group">
+								<input type="text" name="taluka" id="taluka" placeholder="તાલુકા" required>
+							</div>
+				      </div>
+				      <div class="form-row">
+							<div class="form-group">
+								<input type="text" name="district" id="district" placeholder="જીલો" required>
+							</div>
+							<div class="form-group">
+								<input type="text" name="state" id="state" placeholder="રાજ્ય" required>
+							</div>
+				      </div>
+				      <div class="form-row">
+							<div class="form-group">
+								<input type="text" name="pincode" id="pincode" minlength="6" maxlength="6" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="પિનકોડ" required>
+							</div>
+							<div class="form-group">
+							  	<input type="text" name="age" id="age" maxlength="2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="ઉમર" required>
+							</div>
+				      </div>
+				      <div class="form-row">
+							<div class="form-group">
+								<div class="form-select">
+								   <select name="illness" id="illness" required>
+										<option value="" disabled selected> છેલ્લા એક વર્ષમાં કોઈપણ બીમારી </option>
+										<option value="bp">બ્લડ પ્રેશર</option>
+										<option value="sugar">મધુમેહ</option>
+										<option value="asthama">અસ્થમા</option>
+										<option value="heartdisease">હૃદય રોગ</option>
+										<option value="dengue">ડેન્ગ્યુ</option>
+										<option value="jaundice">કમળો</option>
+										<option value="covide">કોરોના</option>
+										<option value="other">અન્ય</option>
+										<option value="noillness">કોઈ બીમારી નથી</option>
+								   </select>
+								   <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-select">
+								   <select name="vaccinated" id="vaccinated" required>
+										<option value="" disabled selected> શું તમે કોવિડ માટે રસી લગાવી છે? </option>
+										<option value="yes">હા</option>
+										<option value="no">ના</option>
+								   </select>
+								   <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+								</div>
+							</div>
+				      </div>
+				      <div class="form-row">
+							<div class="form-group">
+							  	<input type="phone" name="mobile" id="mobile" minlength="10" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" placeholder="મોબાઈલ નંબર" required />
+							</div>
+							<div class="form-group">
+							  	<input type="email" name="email" id="email" placeholder="ઈમેલ (Optional)" />
+							</div>
+				      </div>
+				      <div class="form-submit">
+							<input type="reset" value="ફોર્મ રીસેટ કરો" class="reset" name="reset" id="reset"/>
+							<input type="submit" value="નોંદણી કરો" class="submit" name="submit" id="submit"/>
+				      </div>
+				      <div class="form-group">
+							<h2 style="padding-top: 18px; color: #C0392B; margin-top: 38px; font-size: 25px; ">વ્યવસ્થા - સંચાલન</h2>
+							<h2 style= "color: #C0392B; font-size: 15px;">મુંબઈ જૈન સ્વયંસેવક મંડળ (B.J.S.M.) - ગોડીજી</h2>
+							<h2 style= "color: #6E2C00; font-size: 15px;">-: સંપર્ક :-</h2>
+				      </div>
+				      <div class="form-row">
+							<div class="form-group">
+								<h2 style= "color: #6E2C00; font-size: 12px;">સમીરભાઈ વી. શાહ</h2>
+								<h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૭૭૧૮૦૧૦૫૧૨</strong></h2>
+							</div>
+							<div class="form-group">
+							  	<h2 style= "color: #6E2C00; font-size: 12px;">સંજયભાઈ આર. શાહ</h2>
+							  	<h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૯૩૨૩૯૧૦૭૯૧</strong></h2>
+							</div>
+				      </div>
+				      <div class="form-row">
+							<div class="form-group">
+							  	<h2 style= "color: #6E2C00; font-size: 12px;">વિશાલભાઈ એસ. શાહ</h2>
+							  	<h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૯૩૨૩૦૧૯૨૮૪</strong></h2>
+							</div>
+							<div class="form-group">
+							  	<h2 style= "color: #6E2C00; font-size: 12px;">ચંદ્રેશભાઈ એન. શાહ</h2>
+							  	<h2 style= "color: #6E2C00; font-size: 12px;">મો. <strong>૯૯૩૦૦૮૩૮૫૮</strong></h2>
+							</div>
+				      </div>
+				  </form>
+				</div>
+         </div>
+     </div>
+	</div>
 
-    <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+	<!-- JS -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
 </html>
