@@ -486,18 +486,9 @@ select {
   color: #fff; }
   #submit:hover {
     background-color: darkmagenta; }
-
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid orangered;
-  border-right: 16px ghostwhite ;
-  border-bottom: 16px solid skyblue;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 2s linear infinite;
-}
+    #submit:disabled{
+      background-color: gray;
+      color: black;}
 
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
